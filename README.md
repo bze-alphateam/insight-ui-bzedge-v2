@@ -8,15 +8,19 @@ Please see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io
 
 ## Getting Started
 
+Be sure to use node v8.
 To manually install all of the necessary components, you can run these commands:
 
 ```bash
-npm install -g bitcore-node
-bitcore-node create mynode
+git clone https://github.com/bze-alphateam/bitcore-node-bzedge.git
+cd bitcore-node-bzedge
+npm install
+cd ..
+./bitcore-node-bzedge/bin/bitcore-node create mynode
 cd mynode
-bitcore-node install insight-api
-bitcore-node install insight-ui
-bitcore-node start
+../bitcore-node-bzedge/bin/bitcore-node install bze-alphateam/insight-api-bzedge-v2
+../bitcore-node-bzedge/bin/bitcore-node install bze-alphateam/insight-ui-bzedge-v2
+../bitcore-node-bzedge/bin/bitcore-node start
 ```
 
 Open a web browser to `http://localhost:3001/insight/`
