@@ -25,3 +25,4 @@ peerdb.json
 
 npm-debug.log
 .nodemonignore
+.idea
